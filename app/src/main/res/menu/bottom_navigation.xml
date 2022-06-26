@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/selector_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/selector_store"
+        android:title="스토어" />
+
+    <item
+        android:id="@+id/repair"
+        android:icon="@drawable/selector_repair"
+        android:title="이사/시공/수리" />
+
+    <item
+        android:id="@+id/my_page"
+        android:icon="@drawable/selector_my_page"
+        android:title="마이페이지" />
+
+    <item
+        android:id="@+id/empty"
+        android:title=""
+        android:enabled="false"
+        android:checkable="false"/>
+
+</menu>
