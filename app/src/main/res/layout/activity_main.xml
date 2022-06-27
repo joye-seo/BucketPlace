@@ -10,29 +10,49 @@
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/nav_bottom"
+        app:layout_constraintBottom_toTopOf="@id/layout"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_bottom"
+    <LinearLayout
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:theme="@style/BottomNavigationView"
-        app:menu="@menu/bottom_navigation"
-        app:labelVisibilityMode="labeled"/>
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#C3C8CB"
+            app:layout_constraintBottom_toTopOf="@id/nav_bottom" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#F8F9FB"
+            app:itemIconSize="24.5dp"
+            app:itemPaddingBottom="7.5dp"
+            app:itemPaddingTop="6dp"
+            app:itemTextAppearanceActive="@style/BottomNavigationView"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:itemTextColor="@color/selector_text"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_navigation" />
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btn_plus"
-        android:layout_width="30dp"
-
-        android:layout_height="30dp"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="12dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/ic_plus"
-        app:layout_constraintBottom_toBottomOf="@id/nav_bottom"
-        app:layout_constraintTop_toTopOf="@id/nav_bottom"
-        app:layout_constraintEnd_toEndOf="@id/nav_bottom"/>
-
-
-
+        app:layout_constraintBottom_toBottomOf="@id/layout"
+        app:layout_constraintEnd_toEndOf="@id/layout"
+        app:layout_constraintTop_toTopOf="@id/layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

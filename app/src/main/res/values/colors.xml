@@ -13,4 +13,6 @@
     <color name="divider_color">#F7F8FA</color>
     <color name="bottom_color">#FAFAFA</color>
     <color name="best_button_color">#EAEBEF</color>
+    <color name="bottom_text_color">#525B62</color>
+
 </resources>

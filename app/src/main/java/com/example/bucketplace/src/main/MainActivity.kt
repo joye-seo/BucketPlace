@@ -1,11 +1,13 @@
 package com.example.bucketplace.src.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import com.example.bucketplace.R
 import com.example.bucketplace.config.BaseActivity
 import com.example.bucketplace.databinding.ActivityMainBinding
+
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
@@ -47,9 +49,25 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
 
             itemRippleColor = null
             itemIconTintList = null
-        }
 
+        }
+        // 롱 클릭 시 tooltip 텍스트 안보이게 해줌!
+        binding.navBottom
+            .menu.forEach {
+                binding.navBottom.findViewById<View>(it.itemId).setOnLongClickListener {
+                    true
+                }
+            }
+        binding.btnPlus.setOnClickListener {
+            binding.btnPlus.animate().rotationBy(45f)
+
+            mainPlusFragment = MainPlusFragment()
+
+            val bottomSheet = mainPlusFragment
+            bottomSheet.show(supportFragmentManager, bottomSheet.tag)
+        }
     }
+
 
     private fun changeFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
