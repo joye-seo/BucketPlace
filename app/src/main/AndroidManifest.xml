@@ -13,7 +13,9 @@
         android:theme="@style/Theme.BucketPlace">
         <activity
             android:name=".src.login.LoginActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".src.signup.SignUpActivity"
             android:exported="false" />
@@ -28,6 +30,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
