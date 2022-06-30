@@ -14,5 +14,22 @@
     <color name="bottom_color">#FAFAFA</color>
     <color name="best_button_color">#EAEBEF</color>
     <color name="bottom_text_color">#525B62</color>
+    <color name="yellow">#FAE100</color>
+    <color name="grey">#44442A</color>
+    <color name="redForText">#d9534f</color>
+    <color name="redForDeal">#F97D79</color>
+    <color name="red">#FF0000</color>
+    <color name="grayBorder">#DFDFDF</color>
+    <color name="lightGray">#EAEAEA</color>
+    <color name="transparent">#1A000000</color>
+    <color name="lightBlue">#1A38C4ED</color>
+    <color name="whiteTransparent">#1AFFFFFF</color>
+    <color name="colorPrimary">#5D5D5D</color>
+    <color name="colorPrimaryDark">#38C4ED</color>
+    <color name="colorAccent">#38C4ED</color>
+    <color name = "colorMainBlue">#38C4ED</color>
+    <color name="browser_actions_bg_grey">#F5F5F5</color>
+
+
 
 </resources>
