@@ -19,7 +19,7 @@
         app:showAsAction="ifRoom"
 
         android:icon="@drawable/selector_repair"
-        android:title="이사/시공/수리" />
+        android:title="맞춤업체찾기" />
 
     <item
         android:id="@+id/my_page"

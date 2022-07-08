@@ -1,77 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
 
-    <!--액션바 생성-->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent">
 
-    <!--툴바 생성-->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:elevation="1dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/round_border"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                app:layout_collapseMode="parallax">
 
-            <ImageView
-                android:id="@+id/img_search"
-                android:layout_width="30dp"
-                android:layout_height="26dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginTop="1dp"
-                android:src="@drawable/ic_search" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:background="@color/browser_actions_bg_grey"
-                android:hint="오늘의집 통합검색"
-                android:textColorHint="@color/grayBorder"
-                android:textSize="15dp" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_search"
+                        android:layout_width="30dp"
+                        android:layout_height="26dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_search" />
 
-        </LinearLayout>
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@color/bg_grey"
+                        android:hint="오늘의집 통합검색"
+                        android:textColorHint="@color/divider_grey"
+                        android:textSize="15dp" />
 
-        <ImageView
-            android:id="@+id/img_scrap"
-            android:layout_width="32dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/ic_scrap" />
+                </LinearLayout>
 
-        <ImageView
-            android:id="@+id/img_cart"
-            android:layout_width="35dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/ic_cart" />
-    </androidx.appcompat.widget.Toolbar>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_scrap"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_scrap" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_cart"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_cart" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+            android:id="@+id/layout_tap"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:elevation="1dp"
             android:background="@android:color/background_light"
             app:tabMode="scrollable"
+            android:fitsSystemWindows="true"
             app:tabGravity="center"
             app:tabMinWidth="30dp"
             app:tabIndicatorFullWidth="false"
@@ -79,10 +85,10 @@
             app:tabSelectedTextColor="@color/colorAccent">
 
             <com.google.android.material.tabs.TabItem
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="인기" />
+
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,26 +102,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="집들이" />
+
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="노하우" />
+
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="전문가집들이" />
+
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="질문과답변" />
 
         </com.google.android.material.tabs.TabLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/vPager2"
+        android:id="@+id/vp_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager2.widget.ViewPager2>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

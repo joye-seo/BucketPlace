@@ -19,7 +19,7 @@
     <color name="redForText">#d9534f</color>
     <color name="redForDeal">#F97D79</color>
     <color name="red">#FF0000</color>
-    <color name="grayBorder">#DFDFDF</color>
+    <color name="divider_grey">#DFDFDF</color>
     <color name="lightGray">#EAEAEA</color>
     <color name="transparent">#1A000000</color>
     <color name="lightBlue">#1A38C4ED</color>
@@ -28,7 +28,8 @@
     <color name="colorPrimaryDark">#38C4ED</color>
     <color name="colorAccent">#38C4ED</color>
     <color name = "colorMainBlue">#38C4ED</color>
-    <color name="browser_actions_bg_grey">#F5F5F5</color>
+    <color name="bg_grey">#F5F5F5</color>
+    <color name="grayBorder">#DFDFDF</color>
 
 
 

@@ -1,12 +1,22 @@
 package com.example.bucketplace.src.splash
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import com.example.bucketplace.R
+import android.os.Handler
+import android.os.Looper
+import com.example.bucketplace.config.BaseActivity
+import com.example.bucketplace.databinding.ActivitySplachFirstBinding
 
-class SplashFirstActivity : AppCompatActivity() {
+class SplashFirstActivity : BaseActivity<ActivitySplachFirstBinding>(ActivitySplachFirstBinding::inflate) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splach_first)
+
+        Handler(Looper.getMainLooper()).postDelayed({
+
+            val intent = Intent(this, SplashSecondActivity::class.java)
+            startActivity(intent)
+            finish()
+
+        }, 1500)
     }
 }

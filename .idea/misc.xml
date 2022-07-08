@@ -3,11 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/all_white_edit_text.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/bg_blue_r10.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/blue_round_btn.xml" value="0.1535" />
         <entry key="app/src/main/res/drawable/border_layout.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/check_box.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/corner_grey_round.xml" value="0.183" />
         <entry key="app/src/main/res/drawable/ic_baseline_check_20.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/ic_interior.xml" value="0.126" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1755" />
+        <entry key="app/src/main/res/drawable/main_btm_nav_item_color.xml" value="0.126" />
+        <entry key="app/src/main/res/drawable/my_page_round_light_blue.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/my_spinner.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/photo_plus_round.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/product_detail_brand_round.xml" value="0.1595" />
         <entry key="app/src/main/res/drawable/round_border.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/select_box.xml" value="0.1595" />
         <entry key="app/src/main/res/drawable/selector_home.xml" value="0.156" />
         <entry key="app/src/main/res/drawable/selector_my_page.xml" value="0.2385" />
         <entry key="app/src/main/res/drawable/selector_mypage.xml" value="0.211" />
@@ -16,21 +29,66 @@
         <entry key="app/src/main/res/drawable/selector_text.xml" value="0.2755" />
         <entry key="app/src/main/res/drawable/white_edit_text.xml" value="0.171" />
         <entry key="app/src/main/res/layout-v26/activity_main.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/activity_category_first.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_detail_buy.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_detail_select_item.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_email_login.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/activity_email_password_reset.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3178869323447637" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_review.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/activity_review_full.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_splach_first.xml" value="0.16197916666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/activity_splash_second.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout/dialog_loading.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/fragment_home_house.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/fragment_home_know_how.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/fragment_home_main.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/fragment_login_email.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_login_first.xml" value="0.14270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_login_main.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/fragment_login_second.xml" value="0.14270833333333333" />
-        <entry key="app/src/main/res/layout/fragment_main_home.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_main_home.xml" value="0.2825266520182292" />
+        <entry key="app/src/main/res/layout/fragment_main_home_follow.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/fragment_main_home_house.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_home_know_how.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_home_photo.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_home_popular.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/fragment_main_home_pro.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/fragment_main_home_qna.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/fragment_main_my_page.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/fragment_main_my_page_my_shopping.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/fragment_main_my_page_profile.xml" value="0.29385964912280704" />
         <entry key="app/src/main/res/layout/fragment_main_plue.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/fragment_main_plus.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/fragment_main_repair.xml" value="0.13697916666666668" />
-        <entry key="app/src/main/res/layout/fragment_main_store.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/fragment_main_repair.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_main_store.xml" value="0.2246429443359375" />
+        <entry key="app/src/main/res/layout/fragment_main_store_best.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_deal.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_goods.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/fragment_main_store_limited.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_plan.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_premuim.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_reaper.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_shipping.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_main_store_store_home.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/fragment_my_page_my_shopping.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/fragment_store_best.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/fragment_store_spring.xml" value="0.2651282051282051" />
+        <entry key="app/src/main/res/layout/item_deal.xml" value="0.22447916666666667" />
+        <entry key="app/src/main/res/layout/item_product.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/item_product_detail_info.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/item_product_detail_review.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/item_repair_ad.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/item_review_more.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/item_share_bottom_sheet.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/item_spinner.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/item_spinner_down.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.20364583333333333" />
       </map>
     </option>

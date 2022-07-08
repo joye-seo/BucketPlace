@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/main_page"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
@@ -14,51 +15,50 @@
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <!--툴바 생성-->
-        <androidx.appcompat.widget.Toolbar
+        <LinearLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:background="@color/white"
-            android:elevation="1dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
 
-            <ImageView
-                android:id="@+id/img_setting"
-                android:layout_width="32dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="230dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:paddingBottom="5dp"
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/ic_setting" />
 
-            <ImageView
-                android:id="@+id/img_scrap"
-                android:layout_width="32dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:paddingBottom="3dp"
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_share"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/ic_share" />
 
-            <ImageView
-                android:id="@+id/img_cart"
-                android:layout_width="35dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:paddingBottom="5dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_cart"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/ic_cart" />
-        </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+            android:id="@+id/layout_tap"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/background_light"
             android:elevation="1dp"
-            app:tabGravity="center"
-            app:tabMinWidth="170dp"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@color/colorAccent"
             app:tabTextColor="@color/colorPrimary">
@@ -74,21 +74,19 @@
                 android:text="나의쇼핑" />
 
         </com.google.android.material.tabs.TabLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/sv_popular"
+        android:id="@+id/sv_my_page"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/appbar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
         <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/vPager2"
+            android:id="@+id/vp_my_page"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
     </androidx.core.widget.NestedScrollView>
+
 </LinearLayout>

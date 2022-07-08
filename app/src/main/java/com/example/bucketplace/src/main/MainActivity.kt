@@ -7,6 +7,11 @@ import androidx.fragment.app.Fragment
 import com.example.bucketplace.R
 import com.example.bucketplace.config.BaseActivity
 import com.example.bucketplace.databinding.ActivityMainBinding
+import com.example.bucketplace.src.main.home.MainHomeFragment
+import com.example.bucketplace.src.main.myPage.MainMyPageFragment
+import com.example.bucketplace.src.main.plus.MainPlusFragment
+import com.example.bucketplace.src.main.repair.MainRepairFragment
+import com.example.bucketplace.src.main.store.MainStoreFragment
 
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
@@ -60,12 +65,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             }
         binding.btnPlus.setOnClickListener {
             binding.btnPlus.animate().rotationBy(45f)
-
             mainPlusFragment = MainPlusFragment()
 
             val bottomSheet = mainPlusFragment
             bottomSheet.show(supportFragmentManager, bottomSheet.tag)
         }
+
     }
 
 
